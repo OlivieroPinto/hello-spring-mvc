@@ -20,10 +20,8 @@ public class MainController {
 	@GetMapping("/ora")
 	public String orario(Model model) {
 		LocalDateTime now = LocalDateTime.now();
-		System.out.println("Before : " + now);
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-		String formatDateTime = now.format(formatter);
-		model.addAttribute("orario", formatDateTime);
+		model.addAttribute("orario", now.format(formatter));
 		return "ora";
 	}
 
