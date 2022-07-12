@@ -1,4 +1,4 @@
-package jana60.hellospring;
+package jana60.hellospring.controller;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
